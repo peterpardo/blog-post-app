@@ -2,10 +2,10 @@
     <section class="bg-gray-50 dark:bg-gray-900">
         <div class="mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
             <a
-                class="mb-6 flex items-center text-2xl font-semibold text-gray-900 dark:text-white"
+                class="mb-6"
                 href="#"
             >
-                PostAnything
+                <x-logo />
             </a>
             <div class="w-full rounded-lg bg-white shadow dark:border dark:border-gray-700 dark:bg-gray-800 sm:max-w-md md:mt-0 xl:p-0">
                 <div class="space-y-4 p-6 sm:p-8 md:space-y-6">
@@ -74,7 +74,7 @@
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                             Don’t have an account yet? <a
                                 class="text-primary-600 dark:text-primary-500 font-medium hover:underline"
-                                href="#"
+                                href="{{ url('/register') }}"
                             >Sign up</a>
                         </p>
                     </form>
