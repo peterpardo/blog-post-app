@@ -1,6 +1,6 @@
-<x-layouts.main>
-    <section class="bg-gray-50 dark:bg-gray-900">
-        <div class="mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
+<x-layouts.home>
+    <section class="dark:bg-gray-900">
+        <div class="mx-auto flex flex-col items-center justify-center px-6 py-8">
             <a
                 class="mb-6"
                 href="#"
@@ -74,4 +74,4 @@
             </div>
         </div>
     </section>
-</x-layouts.main>
+    </x-layouts.main>

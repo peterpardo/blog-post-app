@@ -1,6 +1,6 @@
 <x-layouts.main>
     <section class="bg-gray-50 dark:bg-gray-900">
-        <div class="mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
+        <div class="mx-auto flex flex-col items-center justify-center px-6 py-8">
             <a
                 class="mb-6 flex items-center text-2xl font-semibold text-gray-900 dark:text-white"
                 href="#"
@@ -85,18 +85,18 @@
                                     class="font-light text-gray-500 dark:text-gray-300"
                                     for="terms"
                                 >I accept the <a
-                                        class="text-primary-600 dark:text-primary-500 font-medium hover:underline"
+                                        class="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
                                         href="#"
                                     >Terms and Conditions</a></label>
                             </div>
                         </div>
                         <button
-                            class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 w-full rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4"
+                            class="w-full rounded-lg bg-cyan-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
                             type="submit"
                         >Create an account</button>
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                             Already have an account? <a
-                                class="text-primary-600 dark:text-primary-500 font-medium hover:underline"
+                                class="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
                                 href="{{ url('/login') }}"
                             >Login here</a>
                         </p>
