@@ -14,8 +14,10 @@
                     </h1>
                     <form
                         class="space-y-4 md:space-y-6"
-                        action="#"
+                        action="{{ route('login') }}"
+                        method="POST"
                     >
+                        @csrf
                         <div>
                             <x-forms.label for="email">
                                 Your email
@@ -47,7 +49,6 @@
                                         id="remember"
                                         type="checkbox"
                                         aria-describedby="remember"
-                                        required=""
                                     />
                                 </div>
                                 <div class="ml-3 text-sm">
