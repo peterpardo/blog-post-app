@@ -46,7 +46,7 @@
                         </div>
                         <a
                             class="inline-flex items-center font-medium text-cyan-600 hover:underline dark:text-cyan-500"
-                            href="#"
+                            href="{{ url('/blog') }}"
                         >
                             Read more
                             <svg
@@ -106,7 +106,7 @@
                         </div>
                         <a
                             class="inline-flex items-center font-medium text-cyan-600 hover:underline dark:text-cyan-500"
-                            href="#"
+                            href="{{ url('/blog') }}"
                         >
                             Read more
                             <svg
