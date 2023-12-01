@@ -35,4 +35,15 @@ class AuthController extends Controller
             ->with('status', 'success')
             ->with('message', 'Account successfully created!');
     }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
+    }
 }

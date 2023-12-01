@@ -20,10 +20,11 @@
             rel="stylesheet"
         />
 
-        @vite('resources/css/app.css')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 
-    <body class="antialiased bg-gray-50">
+    <body class="bg-gray-50 antialiased">
         {{ $slot }}
     </body>
+
 </html>
