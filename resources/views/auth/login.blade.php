@@ -19,7 +19,10 @@
                     >
                         @csrf
                         <div>
-                            <x-forms.label for="email">
+                            <x-forms.label
+                                for="email"
+                                :hasError="$errors->has('email')"
+                            >
                                 Your email
                             </x-forms.label>
                             <x-forms.input
@@ -27,11 +30,20 @@
                                 name="email"
                                 type="email"
                                 placeholder="name@company.com"
-                                required=""
+                                required
+                                :hasError="$errors->has('email')"
                             />
+                            @error('email')
+                                <x-forms.error-message>
+                                    {{ $message }}
+                                </x-forms.error-message>
+                            @enderror
                         </div>
                         <div>
-                            <x-forms.label for="password">
+                            <x-forms.label
+                                for="password"
+                                :hasError="$errors->has('password')"
+                            >
                                 Password
                             </x-forms.label>
                             <x-forms.input
@@ -39,8 +51,14 @@
                                 name="password"
                                 type="password"
                                 placeholder="••••••••"
-                                required=""
+                                required
+                                :hasError="$errors->has('password')"
                             />
+                            @error('password')
+                                <x-forms.error-message>
+                                    {{ $message }}
+                                </x-forms.error-message>
+                            @enderror
                         </div>
                         <div class="flex items-center justify-between">
                             <div class="flex items-start">

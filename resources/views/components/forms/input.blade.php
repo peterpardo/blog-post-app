@@ -1,3 +1,11 @@
-<input
-    {{ $attributes->merge(['class' => 'focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm']) }}
-/>
+@props(['hasError' => false])
+
+@php
+    $errorColor = 'focus:ring-cyan-600 focus:border-cyan-60 border-gray-300 bg-gray-50';
+
+    if ($hasError) {
+        $errorColor = ' border-red-500 bg-red-50 focus:border-red-500 focus:ring-red-500';
+    }
+@endphp
+
+<input {{ $attributes->merge(['class' => 'block w-full rounded-lg border  p-2.5 text-gray-900 sm:text-sm outline-none ' . $errorColor]) }} />
